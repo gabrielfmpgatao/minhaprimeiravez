@@ -5,21 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu pai me trocou por uma lata de nescau e meia</title>
     <style>
+        @keyframes pisca {
+            0% {
+                    background-color: red;
+                    transform: rotate(360deg);
+            }
+            33%{
+                    background-color: blue;
+            }
+            66%{
+                    background-color: green;
+                    
+            }
+            99%{
+                background-color: red;
+                
+                    transform: rotate(-360deg);
+            }
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0
+        }
         main{
             display: flex;
             flex-direction: column;
             align-items: center;
+            transition: all ease 2s;
+            animation-name: pisca;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        h1{
+            font-size: 30px;
+            color: white;
+
         }
     </style>
 </head>
 <body>
     <main>
-        <H1>Olá mundo</p>
-        <p>Essa pagina talvez seja muito massa</p>
-        Isso não se faz papa
-        <img  src="choro.jpg"/>        
-        <img  src="nescau.png"/>
+        <h1>Isso não se faz papa</h1>
+        <p>Pagina legal</p>
+        <img src="choro.jpg"/>        
+        <h1>Nunca mais abandone sua filhe por um achocolatado nescau edição limitada promoção leve 2 pague 3</h1>
+
+        <img width="300px" src="nescau.png"/>
     </main>
 </body>
 </html>
-
